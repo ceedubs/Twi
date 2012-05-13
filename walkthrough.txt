@@ -18,4 +18,9 @@ show how to embed html if desired
 add app/models dir
 add Twee case class
 add Twee object with all method
+add conf/evolutions/default/1.sql with create table, sequence, and insert statements
 enable H2 db in application.conf
+add call to model in index method to get twees
+add model method to create twee
+add controller method to create twee
+add form to create twee
