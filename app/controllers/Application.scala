@@ -14,7 +14,7 @@ import models.Twee
 
 object Application extends Controller {
 
-  val tweeForm: Form[Twee] = Form(
+  def tweeForm: Form[Twee] = Form(
     mapping(
       "id" -> ignored(NotAssigned: Pk[Long]),
       "created" -> ignored(new Date()),
