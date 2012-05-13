@@ -18,4 +18,5 @@ The repository is intended to provide guidance for creating a Play 2.0 Scala app
  * customize_view - makes some modifications to the view layer of the application
  * persistence - adds in a data layer to support persistence/retrieval of messages
  * valdation - adds some simple validation into message creation
+ * twitter_bootstrap adds Twitter Bootstrap to make things look a little nicer
  * master - the final product
