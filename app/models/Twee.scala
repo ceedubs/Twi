@@ -15,7 +15,7 @@ object Twee {
   def all: Seq[Twee] = {
     DB.withConnection {implicit connection =>
       // the below mapping creates a lazy row parser
-      SQL("select id, created, message from Twee")().map {row =>
+      SQL("select id, created, message from Twee order by created desc")().map {row =>
         new Twee(row[Pk[Long]]("id"), row[Date]("created"), row[String]("message"))
       }.toList // we convert the lazy row parser to a list so the DB connection closes
     }
