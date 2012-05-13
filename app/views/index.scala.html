@@ -4,6 +4,10 @@
 
 @import models.Twee
 
+@import helper.FieldConstructor
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.f) }
+
 @main("Twi") {
     <h2>New Twee</h2>
     @helper.form(action = routes.Application.createTwee()) {
