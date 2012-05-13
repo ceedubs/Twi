@@ -13,3 +13,9 @@ change play20 message to h1 and list of twees
 change controller to send twees arg
 embed script in twee
 show how to embed html if desired
+
+# persistence
+add app/models dir
+add Twee case class
+add Twee object with all method
+enable H2 db in application.conf

@@ -1,11 +1,21 @@
-@(message: String, twees: Seq[String])
+@(tweeForm: Form[models.Twee], twees: Seq[Twee])
 
-@main("Welcome to Play 2.0") {
+@import play.api.data.Form
+
+@import models.Twee
+
+@main("Twi") {
+    <h2>New Twee</h2>
+    @helper.form(action = routes.Application.createTwee()) {
+      <fieldset>
+        @helper.inputText(tweeForm("message"), 'autofocus -> "autofocus")
+      </fieldset>
+    }
     
-    <h1>Recent Twees</h1>
+    <h2>Recent Twees</h2>
 	<ul>
 		@twees.map {twee =>
-			<li>@twee</li>
+			<li>@twee.message <span class="twee-timestamp">@twee.created</span></li>
 		}
 	</ul>
     
