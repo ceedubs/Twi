@@ -1,3 +1,4 @@
+# initial
 play new
 play run
 show in browser
@@ -6,3 +7,9 @@ show routes -> controller
 show simple String controller response
 show controller -> index -> main
 show changing the message and/or template having an effect
+
+# customize_view
+change play20 message to h1 and list of twees
+change controller to send twees arg
+embed script in twee
+show how to embed html if desired

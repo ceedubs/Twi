@@ -1,7 +1,12 @@
-@(message: String)
+@(message: String, twees: Seq[String])
 
 @main("Welcome to Play 2.0") {
     
-    @play20.welcome(message)
+    <h1>Recent Twees</h1>
+	<ul>
+		@twees.map {twee =>
+			<li>@twee</li>
+		}
+	</ul>
     
 }
