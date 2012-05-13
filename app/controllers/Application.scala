@@ -18,7 +18,7 @@ object Application extends Controller {
     mapping(
       "id" -> ignored(NotAssigned: Pk[Long]),
       "created" -> ignored(new Date()),
-      "message" -> text
+      "message" -> text.verifying(nonEmpty, maxLength(14))
     )(Twee.apply)(Twee.unapply)
   )
   
@@ -31,7 +31,7 @@ object Application extends Controller {
 
   def createTwee() = Action { implicit request =>
     tweeForm.bindFromRequest.fold(
-      formWithErrors => BadRequest(views.html.index(tweeForm, Twee.all)),
+      formWithErrors => BadRequest(views.html.index(formWithErrors, Twee.all)),
       twee => {
         Twee.create(twee)
         Redirect(routes.Application.index)
