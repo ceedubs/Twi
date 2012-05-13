@@ -24,3 +24,10 @@ add call to model in index method to get twees
 add model method to create twee
 add controller method to create twee
 add form to create twee
+
+# validation
+try to submit an empty tweet - broken
+add verifying nonEmpty to message field - works
+add CSS to make it a little prettier ?
+try submitting a message with > 14 chars - broken
+add verifying maxLength(14) to field - works
