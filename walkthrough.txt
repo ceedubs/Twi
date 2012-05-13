@@ -1,0 +1,8 @@
+play new
+play run
+show in browser
+ls *
+show routes -> controller
+show simple String controller response
+show controller -> index -> main
+show changing the message and/or template having an effect
