@@ -1,3 +1,17 @@
 .twee-timestamp {
 	font-size: smaller;
 }
+
+body {
+	background-color: gray;
+}
+
+body > div.container {
+	background-color: #F5F5F5;
+	padding: 15px;
+}
+
+h2 > .badge {
+	position: relative;
+	bottom: 5px;
+}

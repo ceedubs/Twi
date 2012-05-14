@@ -16,11 +16,12 @@
 			'autofocus -> "autofocus",
 			'_showConstraints -> false
 		)
-		<input type="submit" value="Create Twee" />
+		<input type="submit" value="Create Twee" class="btn-primary" />
       </fieldset>
     }
     
-    <h2>Recent Twees</h2>
+    <h2>Recent Twees <span class="badge badge-info">@twees.size</span></h2>
+	
 	<ul>
 		@twees.map {twee =>
 			<li>@twee.message <span class="twee-timestamp">@twee.created</span></li>
