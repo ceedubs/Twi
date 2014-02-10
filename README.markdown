@@ -1,3 +1,8 @@
+Note
+====
+This project was thrown together for an IndyScala presentation. It is not meant to actually be used for anything.
+
+
 Twi
 =====================================
 
